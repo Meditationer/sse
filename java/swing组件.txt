@@ -1,0 +1,25 @@
+JLabel 即可有文本又可有图标。
+MouseMotionListener鼠标事件是鼠标移动
+不包含本地代码的Swing组件是轻量级组件
+包含本地代码的AWT组件叫重量级组件
+JFrame 和 JButton组件定义在 javax.swing
+布局管理器负责组件显示方式
+使按钮对象不相应事件，使用的方法是removeActionListener(ActionListener i)
+
+在graphics类中，绘图模式有 正常模式和 异或模式 
+
+
+
+
+gra phi cal(ˈɡræfɪkl图形化的) AWT在java的java.awt包中  。Swing在javax.swing中
+Swing不包含本地代码称为“轻量级”组件。AWT包含本地代码称为"重量级"组件  如果区域重叠AWT显示在上
+组件有：JButton(按钮)，JTextField(文本输入框)，标签(JLabel)     容器有（特殊组件）：框架（Frame），面板（Container）
+顶层容器：
+	JFrame(带标题和控制按钮的独立窗口)
+		JFrame(string title)初始不可见，有标题 。 setVisble(true)设置可见
+		void setBounds(int x,int y,int width,int height)左上角横纵x,y
+		void pack()调整框架大小，适合子组件的首选大小和布局 Container getContentPane()返回框架窗体内容窗格对象	pack包
+
+	JApplet(小应用程序，在浏览器窗口中)
+	JDialog(对话框)
+	JWindow（不带标题和控制按钮的窗口）
