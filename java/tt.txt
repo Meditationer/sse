@@ -1,0 +1,48 @@
+顶层容器：JFrame（能独立运行）
+	通过方法设置内容窗格：
+		1. Container c = frame.getContentPane();
+			c.add()
+		2. Jpanel cp= new JPanel();//创建面板。就像白纸
+			cp.setLayout();
+			cp.add();
+			frame.setContentPane(cp)
+不能独立运行的容器： 普通面板 Jpanel 和 滚动面板 JscrollPane
+垂直滚动： void setVerticalScrollBarPolicy(int policy);
+水平滚动： void setHorizontalScrollBarPolicy(int policy)
+policy的值：
+	需要时可见：ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED;
+	不可见：ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEVER;
+	可见：ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_ALWAYS;
+更小一级滚动条： Scrollbar(int orientation);构造一个具有新方向的滚动条
+
+		Scrollbar(int orientation，int value(大小)，int visible（可视大小），int minimum，int maximum);构造一个新的滚动条
+
+按钮，文本框
+
+布局管理器：FlowLayout流式布局管理器（大小自动适应）
+setLayout(new FlowLayout(FlowLAYOUT.RIGHT(右对齐，还有左。不写就是左)))
+
+	    BorderLayout边界布局管理器
+
+	    GridLayout网格布局管理器（和网格组件大小变化）
+
+	    CardLayout卡片布局管理器
+		myCard = new CardLayout(); contentPane.setLayout(myCard);
+		contentPane.add(p1,"First")first是p1的名字contentPane.add(p1,"weo")
+
+	    BoxLayout盒式布局管理器
+
+	    空布局，通过组件的方法设置：setBounds(int x,int y,int width,int height)
+组合框JConboBox: void setSelectedIndex()设置默认选中   object getSelectedIem()获取选定要转为字符串
+		事件处理：ActionListener或者ItemListener
+
+列表：JList:
+	setSelectionMode():设置选择模式.
+	单项选择：ListSelectionModel.SINGLE_SELECTION
+	多项选择，且选择连续：ListSelectionModel.SINGLE_INTERVAL_SELECTION
+	多项选择,可间断：ListSelectionModel.MULTIPLE_INTERVAL_SELECTION
+java事件处理：采用事件 处理模型
+
+
+
+就算抽象类只实现接口中一个方法，继承抽象类的普通类也要实现全部
