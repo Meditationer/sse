@@ -23,6 +23,6 @@
 
 	ctrl g：行跳转
 
-markdown：
-	Markdown Preview Enhanced支持自动生成目录：想在插入目录的地方加入 [TOC] #代表几级目录
-	**加粗**
+	ctrl k + ctrl T
+
+对于左边图标消失，右击左边方框，勾选所需要或者缺失的。

@@ -13,7 +13,7 @@ JFrame 和 JButton组件定义在 javax.swing
 
 gra phi cal(ˈɡræfɪkl图形化的) AWT在java的java.awt包中  。Swing在javax.swing中
 Swing不包含本地代码称为“轻量级”组件。AWT包含本地代码称为"重量级"组件  如果区域重叠AWT显示在上
-组件有：JButton(按钮)，JTextField(文本输入框)，标签(JLabel)     容器有（特殊组件）：框架（Frame），面板（Container）
+组件有：JButton(按钮)，JTextField(单行文本输入框)，标签(JLabel)     容器有（特殊组件）：框架（Frame），面板（Container）
 顶层容器：
 	JFrame(带标题和控制按钮的独立窗口)
 		JFrame(string title)初始不可见，有标题 。 setVisble(true)设置可见
@@ -23,3 +23,22 @@ Swing不包含本地代码称为“轻量级”组件。AWT包含本地代码称
 	JApplet(小应用程序，在浏览器窗口中)
 	JDialog(对话框)
 	JWindow（不带标题和控制按钮的窗口）
+
+顶层容器都有内容窗格，菜单没有 
+	内容窗格：
+		1.Container c=frame.getContentPane()获得默认内容窗格 c.add(组件,BorderLayout.CENTER)仍然是容器 2参不写默认是中
+		2.创建container的子类jpanel的实例。 
+			JPanel contentPane=new JPanel(); 
+			contentPane.setLayout(new BorderLayout());创建布局管理器
+			contentPane.add(组件,BorderLayout.CENTER)//添加组件BorderLayout.CENTER可以用"south"
+			frame.setContentPane(contentPane);//添加内容窗格
+
+jscrollpane滚动窗口： JScrollpane(Component view)创建显示指定组件内容的JScrollPane 需要方法设置水平还是垂直
+Scrollbar()构造垂直滚动条，或者添加int orientation值是Scrollbar.HORIZONTAL 或者 Scrollbar.VERTICAL
+
+标签JLable显示文本信息和图片信息（可同时）：JLabel(String text,Icon icon,int horizontalAlignment)文本和图片水平对齐同时显示
+		图标标签JLabel(Icon image,int horizontalAlignment)horizontalAlignment可以换成JLabel.RIGHT,JLabel.CENTER,JLabel.LEFT左对齐
+
+按钮：AbstractButton的子类或间接子类有4种形式：JButton(Icon icon)有图标的按钮可以替换为文字,JToggleButton（切换）,JCheckBox（复选）,JRadioButton（单选）
+		JButton b=new JButton("文字"，new ImageIcon("图片"));
+JButton类的方法：void setMnemonic(int mnemonic)设置当前按钮的键盘助记符
