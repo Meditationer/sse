@@ -1,0 +1,12 @@
+抽象类必须含有抽象方法，也可以有普通方法 
+run方法不可开启线程，start才能真正开启。yield()强制终止线程。测试是否活动isAlive()
+    void join(long time)引起线程等待，等调用了他的线程结束，[join|dʒɔɪn参加]
+        Class SynDemo implemets Runable
+        SynDemo syn = new SynDemo();
+        Thread t1 = new Thread(syn);
+跳转语句有：标号，break语句，continue语句;
+\???是3位8进制，\u????是4位16进制 比如 char\u0000
+算术运算符：+，关系运算符：==，逻辑运算符：！，位预算符&，扩展赋值运算符+=和>>>=
+    条件运算符？：，点运算符.实例运算符instanceof(判断引用指向那个实例，返回布尔)，下标运算符[]
+方法覆盖的原则：覆盖方法的允许访问范围不能小于原方法, 覆盖方法所抛出的异常不能比原方法更多
+File f:获取文件名：getName()获取路径getPath()获取父目录名称getParent()文件长度length()
