@@ -1,5 +1,5 @@
 抽象类必须含有抽象方法，也可以有普通方法 
-run方法不可开启线程，start才能真正开启。yield()强制终止线程。测试是否活动isAlive()
+run方法不可开启线程，start才能真正开启。yield()强制终止线程。测试是否活动isAlive()。stop()会让线程死亡状态
     void join(long time)引起线程等待，等调用了他的线程结束，[join|dʒɔɪn参加]
         Class SynDemo implemets Runable
         SynDemo syn = new SynDemo();
@@ -10,3 +10,10 @@ run方法不可开启线程，start才能真正开启。yield()强制终止线�
     条件运算符？：，点运算符.实例运算符instanceof(判断引用指向那个实例，返回布尔)，下标运算符[]
 方法覆盖的原则：覆盖方法的允许访问范围不能小于原方法, 覆盖方法所抛出的异常不能比原方法更多
 File f:获取文件名：getName()获取路径getPath()获取父目录名称getParent()文件长度length()
+
+www采用的是客户机/服务器模式（c/s模式），浏览器与服务器（b/s）
+死锁是一种逻辑运行错误，编译器无法检测
+获得菜单名：getActionCommand()和getLabel（）都是返回按钮的命令名或者说标签名
+int indexOf(int ch): 返回指定字符在字符串中第一次出现处的索引，
+将若干单选按钮对象加到ButtonGroup对象中为的是构建单选按钮组
+文件随机访问类是RandonAccessFile,读取字符是char readChar();

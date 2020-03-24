@@ -9,11 +9,9 @@ JFrame 和 JButton组件定义在 javax.swing
 在graphics类中，绘图模式有 正常模式和 异或模式 
 
 
-
-
 gra phi cal(ˈɡræfɪkl图形化的) AWT在java的java.awt包中  。Swing在javax.swing中
 Swing不包含本地代码称为“轻量级”组件。AWT包含本地代码称为"重量级"组件  如果区域重叠AWT显示在上
-组件有：JButton(按钮)，JTextField(单行文本输入框)，标签(JLabel)     容器有（特殊组件）：框架（Frame），面板（Container）
+组件有：JButton(按钮)，JTextField(单行文本输入框)，标签(JLabel)     容器有（特殊组件）：框架（Frame），面板（Pane）
 顶层容器：
 	JFrame(带标题和控制按钮的独立窗口)
 		JFrame(string title)初始不可见，有标题 。 setVisble(true)设置可见
