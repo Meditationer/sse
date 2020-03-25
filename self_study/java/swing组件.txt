@@ -7,14 +7,14 @@ JFrame 和 JButton组件定义在 javax.swing
 使按钮对象不相应事件，使用的方法是removeActionListener(ActionListener i)
 
 在graphics类中，绘图模式有 正常模式和 异或模式 
-
-
 gra phi cal(ˈɡræfɪkl图形化的) AWT在java的java.awt包中  。Swing在javax.swing中
 Swing不包含本地代码称为“轻量级”组件。AWT包含本地代码称为"重量级"组件  如果区域重叠AWT显示在上
-组件有：JButton(按钮)，JTextField(单行文本输入框)，标签(JLabel)     容器有（特殊组件）：框架（Frame），面板（Pane）
+组件有：JButton(按钮)，JTextField(单行文本输入框)，标签(JLabel)    容器有（特殊组件）：框架（Frame），面板（Pane）
+JTextArea(行，列)是多行的输入框
+【com po nent|kəmˈpəʊnənt组件，元件,构成的;per form ed执行】
 顶层容器：
 	JFrame(带标题和控制按钮的独立窗口)
-		JFrame(string title)初始不可见，有标题 。 setVisble(true)设置可见
+		JFrame(string title)初始不可见，有标题。 setVisble(true)设置可见
 		void setBounds(int x,int y,int width,int height)左上角横纵x,y
 		void pack()调整框架大小，适合子组件的首选大小和布局 Container getContentPane()返回框架窗体内容窗格对象	【pack包】
 		setLayout(LayoutManager manager)设置布局管理器  setBackground(Color)设置背景
@@ -46,3 +46,5 @@ Scrollbar()构造垂直滚动条，或者添加int orientation值是Scrollbar.HO
 按钮：AbstractButton的子类或间接子类有4种形式：JButton(Icon icon)有图标的按钮可以替换为文字,JToggleButton（切换）,JCheckBox（复选）,JRadioButton（单选）
 		JButton b=new JButton("文字"，new ImageIcon("图片"));
 JButton类的方法：void setMnemonic(int mnemonic)设置当前按钮的键盘助记符
+
+查一下getSouce

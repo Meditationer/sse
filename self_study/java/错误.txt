@@ -17,3 +17,13 @@ www采用的是客户机/服务器模式（c/s模式），浏览器与服务器�
 int indexOf(int ch): 返回指定字符在字符串中第一次出现处的索引，
 将若干单选按钮对象加到ButtonGroup对象中为的是构建单选按钮组
 文件随机访问类是RandonAccessFile,读取字符是char readChar();
+
+在swing中与JComponent类有父子关系的是Jlabel（JMenu,JButton，JTextArea都不是）
+可以获得菜单项名称的是getLabel();
+为识别事件对象，调用getActionCommand()返回的是事件源按钮的文字信息
+AWT的font对象的作用是用font对象设置字型号
+建立statement对象后，可以用executeUpdate()方法更新SQL数据
+子类继承父类的好处:子类可以拥有父类所有属性和方法。也可以扩展原有代码，生成新的类，原有代码可以不重写
+Graphices2D中stroke,paint属性的作用stroke属性控制线条的宽度，笔型样式，线段连接方式，paint属性控制填充效果
+
+
