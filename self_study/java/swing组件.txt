@@ -16,20 +16,26 @@ Swing不包含本地代码称为“轻量级”组件。AWT包含本地代码称
 	JFrame(带标题和控制按钮的独立窗口)
 		JFrame(string title)初始不可见，有标题 。 setVisble(true)设置可见
 		void setBounds(int x,int y,int width,int height)左上角横纵x,y
-		void pack()调整框架大小，适合子组件的首选大小和布局 Container getContentPane()返回框架窗体内容窗格对象	pack包
+		void pack()调整框架大小，适合子组件的首选大小和布局 Container getContentPane()返回框架窗体内容窗格对象	【pack包】
+		setLayout(LayoutManager manager)设置布局管理器  setBackground(Color)设置背景
+```
+JFrame frame = new JFrame("带标题")//最外层的顶层容器（组件必须在容器中，容器可以嵌套）
+frame.getContentPane().add(button,BorderLayout.CENTER)//添加组件的时候设置边界布局#必须获得内容窗格getContentPane#  2参不写默认是中
+frame.pack()//调整适当大小
+frame.setVisble(显示可见)
+frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+```
+获得内容窗格的方式有1. Container c = frame.getContentPane();然后在内容窗格内添加组件（这是默认的内容窗格而且默认BorderLayout）
+JPanel contentPane = new JPanel();//创建实例
+contentPane.setLayout(new BorderLayout());//他默认是flowLayout,所以要设置 BorderLayout.CENTER可以用"south"
+contentPane.add(button，BorderLayout.CENTER）添加组件
+frame.setContentPane(contentPane)//向顶层容器添加内容窗格
+
 
 	JApplet(小应用程序，在浏览器窗口中)
 	JDialog(对话框)
 	JWindow（不带标题和控制按钮的窗口）
 
-顶层容器都有内容窗格，菜单没有 
-	内容窗格：
-		1.Container c=frame.getContentPane()获得默认内容窗格 c.add(组件,BorderLayout.CENTER)仍然是容器 2参不写默认是中
-		2.创建container的子类jpanel的实例。 
-			JPanel contentPane=new JPanel(); 
-			contentPane.setLayout(new BorderLayout());创建布局管理器
-			contentPane.add(组件,BorderLayout.CENTER)//添加组件BorderLayout.CENTER可以用"south"
-			frame.setContentPane(contentPane);//添加内容窗格
 
 jscrollpane滚动窗口： JScrollpane(Component view)创建显示指定组件内容的JScrollPane 需要方法设置水平还是垂直
 Scrollbar()构造垂直滚动条，或者添加int orientation值是Scrollbar.HORIZONTAL 或者 Scrollbar.VERTICAL
