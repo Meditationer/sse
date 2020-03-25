@@ -28,23 +28,30 @@ frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
 获得内容窗格的方式有1. Container c = frame.getContentPane();然后在内容窗格内添加组件（这是默认的内容窗格而且默认BorderLayout）
 JPanel contentPane = new JPanel();//创建实例
 contentPane.setLayout(new BorderLayout());//他默认是flowLayout,所以要设置 BorderLayout.CENTER可以用"south"
-contentPane.add(button，BorderLayout.CENTER）添加组件
+contentPane.add(button，BorderLayout.CENTER）添加组件            内容窗格添加东西的时候，可以设置位置
 frame.setContentPane(contentPane)//向顶层容器添加内容窗格
-
-
 	JApplet(小应用程序，在浏览器窗口中)
 	JDialog(对话框)
 	JWindow（不带标题和控制按钮的窗口）
 
-
-jscrollpane滚动窗口： JScrollpane(Component view)创建显示指定组件内容的JScrollPane 需要方法设置水平还是垂直
-Scrollbar()构造垂直滚动条，或者添加int orientation值是Scrollbar.HORIZONTAL 或者 Scrollbar.VERTICAL
+jscrollpane滚动窗口： JScrollpane(Component view)创建显示指定组件内容的JScrollPane 需要方法设置水平还是垂直【Component|kəmˈpəʊnən成分；组件】
+new JPanel(LayoutManager layout).add(Component comp)指定布局管理器的新面板，并添加指定组件。
+Scrollbar()构造垂直滚动条，或者添加int orientation值是Scrollbar.HORIZONTAL 或者 Scrollbar.VERTICAL。
+因为JScrollPane是Container的子类,但是只能添加一个组件。所以多个组件的时候一般先添加到JPanel再添加到JScrollPane
 
 标签JLable显示文本信息和图片信息（可同时）：JLabel(String text,Icon icon,int horizontalAlignment)文本和图片水平对齐同时显示
-		图标标签JLabel(Icon image,int horizontalAlignment)horizontalAlignment可以换成JLabel.RIGHT,JLabel.CENTER,JLabel.LEFT左对齐
+		图标的标签JLabel(Icon image,int horizontalAlignment)horizontalAlignment可以换成JLabel.RIGHT,JLabel.CENTER,JLabel.LEFT左对齐，image可以换成文本
+		（默认情况下，只有文本水平左对齐，只有图标水平居中，标签内容垂直居中）
+		设置对齐方式：label.setHorizontalAlignment(JLabel.CENTER)水平居中,label.setVerticalAlignment(JLabel.BOTTOM)底部对齐
+		【Alignment|əˈlaɪnmənt队列，成直线对齐，Vertical|ˈvɜːrtɪkl垂直的】
 
-按钮：AbstractButton的子类或间接子类有4种形式：JButton(Icon icon)有图标的按钮可以替换为文字,JToggleButton（切换）,JCheckBox（复选）,JRadioButton（单选）
+按钮：AbstractButton的子类或间接子类有4种形式：JButton(Icon icon)有图标的按钮可以替换为文字,JToggleButton（切换）(父类),JCheckBox（复选）（子类）,JRadioButton（单选）（子类）
 		JButton b=new JButton("文字"，new ImageIcon("图片"));
 JButton类的方法：void setMnemonic(int mnemonic)设置当前按钮的键盘助记符
+		setText(设置按钮的文本)。getText()返回按钮的文本。
+		setToolTipText（string text）设置要显示的提示文本
+		addActionListener(ActionListener i)添加侦听事件
+		setEnabled()方法改变按钮状态
+		new JToggleButton（string text.icon icon,boolean selected）显示文本加图标和舒适化状态的切换按钮，默认未选中
 
 查一下getSouce
