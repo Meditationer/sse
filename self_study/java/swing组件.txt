@@ -1,17 +1,15 @@
 JLabel 即可有文本又可有图标。
 MouseMotionListener鼠标事件是鼠标移动
-不包含本地代码的Swing组件是轻量级组件
-包含本地代码的AWT组件叫重量级组件
 JFrame 和 JButton组件定义在 javax.swing
 布局管理器负责组件显示方式
-使按钮对象不相应事件，使用的方法是removeActionListener(ActionListener i)
+使按钮对象不响应事件，使用的方法是removeActionListener(ActionListener i)
 
-在graphics类中，绘图模式有 正常模式和 异或模式 
+在gra phi cs类中，绘图模式有 正常模式和 异或模式 
 gra phi cal(ˈɡræfɪkl图形化的) AWT在java的java.awt包中  。Swing在javax.swing中
 Swing不包含本地代码称为“轻量级”组件。AWT包含本地代码称为"重量级"组件  如果区域重叠AWT显示在上
 组件有：JButton(按钮)，JTextField(单行文本输入框)，标签(JLabel)    容器有（特殊组件）：框架（Frame），面板（Pane）
 JTextArea(行，列)是多行的输入框
-【com po nent|kəmˈpəʊnənt组件，元件,构成的;per form ed执行】
+【com po nent|kəmˈpəʊnənt组件，元件,构成的;per for med执行】
 顶层容器：
 	JFrame(带标题和控制按钮的独立窗口)
 		JFrame(string title)初始不可见，有标题。 setVisble(true)设置可见
@@ -45,8 +43,10 @@ Scrollbar()构造垂直滚动条，或者添加int orientation值是Scrollbar.HO
 		设置对齐方式：label.setHorizontalAlignment(JLabel.CENTER)水平居中,label.setVerticalAlignment(JLabel.BOTTOM)底部对齐
 		【Alignment|əˈlaɪnmənt队列，成直线对齐，Vertical|ˈvɜːrtɪkl垂直的】
 
-按钮：AbstractButton的子类或间接子类有4种形式：JButton(Icon icon)有图标的按钮可以替换为文字,JToggleButton（切换）(父类),JCheckBox（复选）（子类）,JRadioButton（单选）（子类）
+按钮：AbstractButton的子类或间接子类有4种形式：JButton(Icon icon)有图标的按钮可以替换为文字,
+JToggleButton（切换）(父类),JCheckBox（复选）（子类）,JRadioButton（单选）（子类）
 		JButton b=new JButton("文字"，new ImageIcon("图片"));
+		JButton(String text)：创建一个有标签文本、无图标的按钮
 JButton类的方法：void setMnemonic(int mnemonic)设置当前按钮的键盘助记符
 		setText(设置按钮的文本)。getText()返回按钮的文本。
 		setToolTipText（string text）设置要显示的提示文本
@@ -54,4 +54,4 @@ JButton类的方法：void setMnemonic(int mnemonic)设置当前按钮的键盘�
 		setEnabled()方法改变按钮状态
 		new JToggleButton（string text.icon icon,boolean selected）显示文本加图标和舒适化状态的切换按钮，默认未选中
 
-查一下getSouce
+getSource()方法是指从哪个组件发出的事件源
