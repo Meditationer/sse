@@ -25,5 +25,6 @@ AWT的font对象的作用是用font对象设置字型号
 建立statement对象后，可以用executeUpdate()方法更新SQL数据 【e xe cute|ˈeksɪkjuːt实行；执行；处死】
 子类继承父类的好处:子类可以拥有父类所有属性和方法。也可以扩展原有代码，生成新的类，原有代码可以不重写
 Graphices2D中stroke,paint属性的作用stroke属性控制线条的宽度，笔型样式，线段连接方式，paint属性控制填充效果【stroke|strəʊk画，划掉，中风，paint|peɪnt油漆绘画】
-
+设置组件显示方式的是布局管理器
+用javax.swing包中的累JFileChooser实现打开和保持文件对话框，首先获取的信息是文件路径。
 
