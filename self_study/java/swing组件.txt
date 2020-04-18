@@ -98,7 +98,7 @@ Graphics2D继承于Graphics中的属性以及效果：
 		paint属性控制填充，先GradientPaint()确定填充效果,再使用setPaint设置		【Gradient|ɡreɪdiənt梯度，变化率】
 		transform属性，setTransform()方法设置transform属性
 		clip属性实现裁剪效果，setClip()确定裁剪区
-		composit属性设置图形重叠效果
+		composit属性设置图形重叠效果Command
 		使用Graphics2D画一个图形的步骤是：先用paintComponent()或paint()
 
 组合框与列表：JComboBox是一个下拉菜单（可编辑的和不可编辑的）new JComboBox(Object[] items)里面的数组就是选项
