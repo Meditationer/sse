@@ -26,3 +26,27 @@ a++ 这种先赋值，就是在这行运算范围内都是a，下一行才是--a
     3. 在设置环境变量后，可以输入javac 测试
     4. 除了is a 还有has a
 
+08.10  错误
+    D,B,A,A,C,D,A,D,C,A
+    11.主类应用程序，
+    12.if(goal==10){System.out.prient("对了!")}els{System.out.prient("错了!")}
+    13.成员方法和成员变量 ---
+    14.垃圾回收
+    15.卡片
+    16.MouseListener
+    17.黄色---
+    18.run
+    19.BufferedRead
+    20.Socket
+    21.(x==2)!(y==3)
+    22.第三行，第五行，第六行，
+    23.，，ActionListener
+    24.g.phices(20,30,100)
+    25.import java.IO.*
+    26.连接数据库，开启数据流，关闭流
+    27.n%10,return 
+    28.getContent
+    29.singingItem,getActionCommad
+    30.ActionEvent,
+    31
+
