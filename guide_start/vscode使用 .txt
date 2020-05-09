@@ -15,7 +15,7 @@
 
 	多光标：ctrl alt up/down
 	ctrl g：行跳转
-	ctrl k + ctrl T 调
+	ctrl k + ctrl T 调背景
 语言还可以通过按Ctrl + F12来支持跳转到符号的实现
 Shift + F12看什么引用了他。
 对于左边图标消失，右击左边方框，勾选所需要或者缺失的。
@@ -23,4 +23,4 @@ Shift + F12看什么引用了他。
 查看md文件预览ctrl+shift+v
 
 
-md使用：***是分割线  ==高亮==
+md使用：***是分割线
