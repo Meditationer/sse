@@ -3,7 +3,7 @@ MouseMotionListener鼠标事件是鼠标移动
 JFrame 和 JButton组件定义在 javax.swing
 布局管理器负责组件显示方式
 使按钮对象不响应事件，使用的方法是removeActionListener(ActionListener i)
-settitle()设置标题
+setTitle()设置标题
 
 gra phi cal(ˈɡræfɪkl图形化的) AWT在java的java.awt包中  。Swing在javax.swing中
 Swing不包含本地代码称为“轻量级”组件。AWT包含本地代码称为"重量级"组件  如果区域重叠AWT显示在上
