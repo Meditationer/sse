@@ -1,1 +1,60 @@
-﻿
+﻿jdk1.8	多线程异步，线程池（executor 譬如 scala的akka机制）
+
+spring框架组件：
+	spring 	Web(MVC)
+	Spring Session
+	spring AMQP
+	spring data redis
+
+ORM映射框架
+	MyBatis
+	Spring data JPA
+	
+web中间件
+	tomcat
+	jetty
+
+微服务
+	spring boot（enviroment,resource,listener,bean加载搞清楚comman runner 和 postconstruct）
+	注册中心
+	网关
+	服务治理
+	通信协议
+	spring cloud（在service层上配置 ribbot feign）
+	
+打包部署
+	docker
+	k8s			(service mesh技术可能是主流)
+	
+消息中间件		elasticsearch 基本api
+	rabbit MQ
+	kafka （avro序列化，json序列化,拷贝）
+	netty（websocket,akka）
+
+数据存储
+	redis（分布式锁） mysql
+
+版本控制
+	git,idea(jvm。os，网络，数据结构)
+	类加载，双亲委托，jstat dump看gc日志
+	
+rpc技术
+	dubbo
+	
+缓存技术 spring cache + redis
+
+高性能队列：
+	disruptor
+
+爬虫，大数据
+
+概念：
+	oop
+	di
+	ioc和aop
+	工厂，代理，策略，门面，
+	jvm。os，网络，数据结构
+	restful api
+
+我的初恋十八岁
+砰然心动
